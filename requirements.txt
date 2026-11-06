@@ -1,0 +1,13 @@
+# Ripon AI Studio  -  Windows 10/11.  Python 3.10 - 3.13 recommended (3.12 is the safest choice for the AI packages).
+PySide6>=6.6
+opencv-python>=4.8
+numpy>=1.24
+pillow>=10.1
+onnxruntime>=1.17        # MODNet, LaMa (object removal), CodeFormer / GFPGAN (face restore).  GPU on any Windows GPU: pip uninstall onnxruntime, then pip install onnxruntime-directml
+
+# ---- optional (the app starts without them; Settings > AI models shows what is missing) ----
+# rembg                 # extra background-removal models (u2net, BiRefNet, ISNet ...); MODNet works without it
+# pymupdf               # import PDF pages in Document Studio
+
+# ---- build only ----
+# pyinstaller
